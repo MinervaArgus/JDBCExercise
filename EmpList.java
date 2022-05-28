@@ -8,7 +8,7 @@ class EmpList {
   public static void main (String args []) 
       throws SQLException { 
 
-    DriverManager.registerDriver (new Oracle.jdbc.driver.OracleDriver());
+    DriverManager.registerDriver (new oracle.jdbc.driver.OracleDriver());
 
     String user, pass, query;
     user = "example";
