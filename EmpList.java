@@ -3,11 +3,11 @@
 /*************************************************************************/
 
 import java.sql.*; 
-
+import oracle.jdbc.driver.*;
 class EmpList { 
   public static void main (String args []) 
       throws SQLException { 
-
+    Class.forName(“oracle.jdbc.driver.OracleDriver”);
     DriverManager.registerDriver (new oracle.jdbc.driver.OracleDriver());
 
     String user, pass, query;
